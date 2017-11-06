@@ -13,27 +13,28 @@
 					</div>
 					<div class="search">
 						<input type="search" placeholder="Поиск:">
+						<input type="submit">
 					</div>
 					<div class="bookmarks">
-						<a href="#">Закладки:</a>
-						<span>0</span>
+						<a href="#">
+							Закладки:<span>0</span>
+						</a>
 					</div>
 					<div class="basket">
-						<a href="#">Корзина:</a>
-						<span>0</span>
+						<a href="#">
+							Корзина:<span>0</span>
+						</a>
 					</div>
 					<div class="order">
 						<a href="#">Оформить заказ</a>
 					</div>
 				</div>
 			</div>
-			<div class="container">
-				<div class="acquaintance">
-					<div class="shop-introduce">
-						<p>
-							Интернет-магазин строительных материалов и инструментов для ремонта
-						</p>
-					</div>
+			<div class="acquaintance">
+				<div class="container">
+					<p class="shop-introduce">
+						Интернет-магазин строительных материалов и инструментов для ремонта
+					</p>
 					<div class="contact-us">
 						<a href="tel:+78125550505">+7 (812) 555-05-05</a>
 						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -92,15 +93,17 @@
 					<h3>Доставка</h3>
 					<a class="btn" href="#">Бесплатно</a>
 				</div>
-				<div class="offers-slider-one">
-					<h2>Перфораторы</h2>
-					<p>Настоящие мужские игрушки</p>
-					<a class="btn-red" href="catalog.html">Открыть каталог</a>
-				</div>
-				<div class="offers-slider-two">
-					<h2>Дрели</h2>
-					<p>Соседям на радость!</p>
-					<a class="btn-red" href="catalog.html">Открыть каталог</a>
+				<div class="offers-sliders">
+					<div class="offers-slider-one">
+						<h2>Перфораторы</h2>
+						<p>Настоящие мужские игрушки</p>
+						<a class="btn-red" href="catalog.html">Открыть каталог</a>
+					</div>
+					<div class="offers-slider-two">
+						<h2>Дрели</h2>
+						<p>Соседям на радость!</p>
+						<a class="btn-red" href="catalog.html">Открыть каталог</a>
+					</div>
 				</div>
 			</section>
 			<section class="container popular-goods">
@@ -108,41 +111,47 @@
 					<h2>Популярные товары:</h2>
 					<a class="btn-red" href="#">Все популярные товары</a>
 				</div>
-				<div class="popular-goods-items">
-					<ul>
-						<li>
-							<img src="http://placehold.it/150x100" alt="BOSCH BFG 9000">
-							<h3>Перфоратор BOSCH BFG 9000</h3>
-							<span class="old-value">32500 Р.</span>
-							<span>25500 Р.</span>
+				<ul class="popular-goods-items">
+					<li>
+						<img src="http://placehold.it/150x100" alt="BOSCH BFG 9000">
+						<h3>Перфоратор BOSCH BFG 9000</h3>
+						<span class="old-value">32500 Р.</span>
+						<span>25500 Р.</span>
+						<div class="popup-goods">
 							<a class="buy" href="#">Купить</a>
 							<a class="add-bookmark" href="#">В закладки</a>
-						</li>
-						<li>
-							<img src="http://placehold.it/150x100" alt="BOSCH BFG 3000">
-							<h3>Перфоратор BOSCH BFG 3000</h3>
-							<span class="old-value">22500 Р.</span>
-							<span>15500 Р.</span>
+						</div>
+					</li>
+					<li>
+						<img src="http://placehold.it/150x100" alt="BOSCH BFG 3000">
+						<h3>Перфоратор BOSCH BFG 3000</h3>
+						<span class="old-value">22500 Р.</span>
+						<span>15500 Р.</span>
+						<div class="popup-goods">
 							<a class="buy" href="#">Купить</a>
 							<a class="add-bookmark" href="#">В закладки</a>
-						</li>
-						<li>
-							<img src="http://placehold.it/150x100" alt="BOSCH BFG 6000">
-							<h3>Перфоратор BOSCH BFG 6000</h3>
-							<span class="old-value">30500 Р.</span>
-							<span>25500 Р.</span>
+						</div>
+					</li>
+					<li>
+						<img src="http://placehold.it/150x100" alt="BOSCH BFG 6000">
+						<h3>Перфоратор BOSCH BFG 6000</h3>
+						<span class="old-value">30500 Р.</span>
+						<span>25500 Р.</span>
+						<div class="popup-goods">
 							<a class="buy" href="#">Купить</a>
 							<a class="add-bookmark" href="#">В закладки</a>
-						</li>
-						<li>
-							<img src="http://placehold.it/150x100" alt="BOSCH BFG 2000">
-							<h3>Перфоратор BOSCH BFG 2000</h3>
-							<span>12500 Р.</span>
+						</div>
+					</li>
+					<li>
+						<img src="http://placehold.it/150x100" alt="BOSCH BFG 2000">
+						<h3>Перфоратор BOSCH BFG 2000</h3>
+						<span>12500 Р.</span>
+						<div class="popup-goods">
 							<a class="buy" href="#">Купить</a>
 							<a class="add-bookmark" href="#">В закладки</a>
-						</li>
-					</ul>
-				</div>
+						</div>
+					</li>
+				</ul>
 			</section>
 			<section class="container popular-producers">
 				<div class="popular-title">
@@ -201,32 +210,34 @@
 								</li>
 							</ul>
 						</div>
-						<div class="services-slider-deliver">
-							<h2>Доставка</h2>
-							<p>
-								Мы с удовольствием доставим ваш товар прямо <br>
-								к вашему подъезду совершенно бесплатно! <br>
-								Ведь мы неплохо заработаем, <br>
-								поднимая его на ваш этаж!
-							</p>
-						</div>
-						<div class="services-slider-guarantee">
-							<h2>Гарантия</h2>
-							<p>
-								Если купленный у нас товар поломается или заискрит, <br>
-								а также в случае пожара, спровоцированного его возгаранием, <br>
-								вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>
-								сгоревший товар на новый. <br>
-								Дом уж восстановите как-нибудь сами.
-							</p>
-						</div>
-						<div class="services-slider-credit">
-							<h2>Кредит</h2>
-							<p>
-								Залезть в долговую яму стало проще! <br>
-								Кредитные консультанты придут ва  на помощь.
-							</p>
-							<a class="btn-red" href="#">Отправить заявку</a>
+						<div class="sliders-section">
+							<div class="services-slider-deliver">
+								<h2>Доставка</h2>
+								<p>
+									Мы с удовольствием доставим ваш товар прямо <br>
+									к вашему подъезду совершенно бесплатно! <br>
+									Ведь мы неплохо заработаем, <br>
+									поднимая его на ваш этаж!
+								</p>
+							</div>
+							<div class="services-slider-guarantee">
+								<h2>Гарантия</h2>
+								<p>
+									Если купленный у нас товар поломается или заискрит, <br>
+									а также в случае пожара, спровоцированного его возгаранием, <br>
+									вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>
+									сгоревший товар на новый. <br>
+									Дом уж восстановите как-нибудь сами.
+								</p>
+							</div>
+							<div class="services-slider-credit">
+								<h2>Кредит</h2>
+								<p>
+									Залезть в долговую яму стало проще! <br>
+									Кредитные консультанты придут ва  на помощь.
+								</p>
+								<a class="btn-red" href="#">Отправить заявку</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -261,8 +272,8 @@
 			</section>
 		</main>
 		<footer>
-			<div class="container">
-				<div class="footer-top">
+			<div class="footer-top">
+				<div class="container">
 					<div class="footer-contacts">
 						<div class="footer-logo">
 							ТЕХНОМАРТ
@@ -308,7 +319,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="footer-bottom">
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
 					<div class="copyright">
 						<p>&#169; 2010-2017 Компания "Техномарт"</p>
 						<p>Все права защищены</p>
