@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Cuprum';
+    src: url('cuprum.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cuprum';
+    src: url('cuprumbold.woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cuprum';
+    src: url('cuprumitalic.woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+body {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 938px;
+    margin: 0 auto;
+}
+/* ============ Header ================================= */
+
+.user-panel {
+    background: #293449;
+    box-sizing: border-box;
+}
+.user-panel .container {
+    display: flex;
+    justify-content: space-between;
+}
+.user-panel a,
+.main-nav a {
+    font-size: 17px;
+    color: #fff;
+}
+.logo,
+.footer-logo {
+    background: #ee3643;
+}
+.logo a,
+.footer-logo a {
+    font-size: 24px;
+}
+.order {
+    background: #90c076;
+}
+.acquaintance {
+    background: #f3f7f9;
+    box-sizing: border-box;
+    min-height: 277px;
+    padding: 25px 0;
+}
+.acquaintance .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.shop-introduce {
+    width: 195px;
+    height: 75px;
+    font-size: 16px;
+    color: #ee3643;
+}
+.contact-us a {
+    font-size: 21px;
+    color: #ee3643;
+}
+.contact-us p {
+    font-size: 14px;
+    color: #32425c;
+}
+.user-block a {
+    font-size: 21px;
+    color: #000;
+    background: #f1f4f5;
+}
+.main-nav {
+    background: #32425c;
+    margin-top: 30px;
+}
+.main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 938px;
+}
+/*==================== Offers ===========================*/
+
+.offers {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 55px;
+    min-height: 405px;
+}
+.offers-item {
+    width: 300px;
+    height: 120px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+.offers-item a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: normal;
+}
+.offers-slider-item {
+    width: 620px;
+    height: 265px;
+    font-size: 18px;
+    color: #fff;
+}
+.offers-slider-item h2 {
+    font-size: 36px;
+}
+.offers-slider-one {
+    background: url(../img/slider_1.jpg) no-repeat;
+}
+.offers-item-materials,
+.offers-item-delivery {
+    background: #fabd4c;
+}
+.offers-item-tools {
+    background: #50c0e3;
+}
+.offers-item-equipment {
+    background: #e1a7de;
+}
+.offers-item-discount {
+    background: #a3dda4;
+}
+/*==================== Popular-goods=====================*/
+
+.popular-goods {
+    box-sizing: border-box;
+}
+.popular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: #f9f5f0;
+}
+.popular-goods-items {
+    display: flex;
+}
+.popular-goods-items li {
+    width: 220px;
+    height: 315px;
+}
+/*==================== Popular Producers ================*/
+
+.popular-producers {
+    box-sizing: border-box;
+}
+.popular-producers-items ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.popular-producers-items li {
+    width: 220px;
+    height: 145px;
+}
+/*==================== Services =========================*/
+
+.services {
+    min-height: 520px;
+    background: #f4f8f9;
+}
+.services-title {
+    font-size: 15px;
+}
+.services-title h2 {
+    font-size: 30px;
+}
+.services-slider-menu li {
+    width: 240px;
+    height: 60px;
+}
+.services-slider-menu a {
+    background: #34445e;
+    color: #fff;
+}
+.services-slider {
+    display: flex;
+    justify-content: space-around;
+}
+.services-slider-deliver h2 {
+    font-size: 36px;
+    color: rgb(50, 66, 92);
+}
+.services-slider-deliver {
+    background: url(../img/delivery_slide.png) no-repeat;
+}
+/*==================== About-Us =========================*/
+
+.about-us {
+    display: flex;
+}
+/*==================== Footer-Top =======================*/
+
+footer a,
+footer p {
+    color: #fff;
+}
+.footer-top {
+    min-height: 190px;
+    background: #32425c;
+}
+.footer-top .container {
+    display: flex;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+.footer-main-nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-main-nav li {
+    margin-right: 65px;
+}
+.footer-offers-nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-bottom {
+    min-height: 105px;
+    background: #293449;
+    margin-top: -20px;
+}
+.footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social a {
+    margin-right: 5px;
+}
+.addition {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-offers-nav a,
+.addition-email a,
+.addition-develop a {
+    color: #ffd180;
+}
+/*==================== Catalog ==========================*/
+
+.breadcrumbs {
+    display: flex;
+}
+.breadcrumbs li {
+    margin-right: 10px;
+}
+.breadcrumbs a,
+.sort-list a {
+    color: #000;
+}
+.main-catalog-title {
+    background: #f4f7f9;
+    padding: 30px;
+    font-size: 30px;
+    color: #32425c;
+}
+.catalog-sorting {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: #f7f3ec;
+}
+.sort-list {
+    display: flex;
+}
+.sort-list li {
+    margin-right: 10px;
+}
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-section li {
+    width: 250px;
+    height: 315px;
+}
+.useful-information p {
+    line-height: 24px;
+}
+.useful-information h2 {
+    font-size: 30px;
+}
+.btn-red {
+    background: #ef3c49;
+    font-size: 14px;
+    color: #fff;
+}
+.wrapper {}
+/*==================== Hidden Layers ====================*/
+
+.offers-slider-two {
+    display: none;
+}
+.services-slider-guarantee {
+    display: none;
+}
+.services-slider-credit {
+    display: none;
+}
+.popap-letter {
+    display: none;
+}
+.confirmation-order {
+    display: none;
+}
+.big-map {
+    display: none;
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}

@@ -3,13 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Техномарт</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 		<header>
 			<div class="user-panel">
 				<div class="container">
 					<div class="logo">
-						ТЕХНОМАРТ
+						<a href="">ТЕХНОМАРТ</a>
 					</div>
 					<div class="search">
 						<input type="search" placeholder="Поиск:">
@@ -73,6 +75,7 @@
 		</header>
 		<main>
 			<section class="container offers">
+				<h2 class="visually-hidden">Раздел предложений</h2>
 				<div class="offers-item offers-item-materials">
 					<h3>Материалы</h3>
 					<a class="btn" href="#">На любой вкус</a>
@@ -94,12 +97,12 @@
 					<a class="btn" href="#">Бесплатно</a>
 				</div>
 				<div class="offers-sliders">
-					<div class="offers-slider-one">
+					<div class="offers-slider-item offers-slider-one">
 						<h2>Перфораторы</h2>
 						<p>Настоящие мужские игрушки</p>
 						<a class="btn-red" href="catalog.html">Открыть каталог</a>
 					</div>
-					<div class="offers-slider-two">
+					<div class="offers-slider-item offers-slider-two">
 						<h2>Дрели</h2>
 						<p>Соседям на радость!</p>
 						<a class="btn-red" href="catalog.html">Открыть каталог</a>
@@ -107,6 +110,7 @@
 				</div>
 			</section>
 			<section class="container popular-goods">
+				<h2 class="visually-hidden">Раздел популярных товаров</h2>
 				<div class="popular-title">
 					<h2>Популярные товары:</h2>
 					<a class="btn-red" href="#">Все популярные товары</a>
@@ -154,6 +158,7 @@
 				</ul>
 			</section>
 			<section class="container popular-producers">
+				<h2 class="visually-hidden">Раздел популярных производителей</h2>
 				<div class="popular-title">
 					<h2>Популярные производители:</h2>
 					<a class="btn-red" href="#">Все производители</a>
@@ -276,7 +281,7 @@
 				<div class="container">
 					<div class="footer-contacts">
 						<div class="footer-logo">
-							ТЕХНОМАРТ
+							<a href="">ТЕХНОМАРТ</a>
 						</div>
 						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						<a href="tel:+78125550505">+7 (812) 555-05-05</a>
@@ -327,14 +332,14 @@
 						<p>Все права защищены</p>
 					</div>
 					<div class="social">
-						<a href="#">Вконтакте
-							<img src="http://placehold.it/50x50" alt="vk">
+						<a href="#"><span class="visually-hidden">Вконтакте</span>
+							<img src="img/icon-vk.svg" alt="vk">
 						</a>
-						<a href="#">Фейсбук
-							<img src="http://placehold.it/50x50" alt="fb">
+						<a href="#"><span class="visually-hidden">Фейсбук</span>
+							<img src="img/icon-fb.svg" alt="fb">
 						</a>
-						<a href="#">Инстаграм
-							<img src="http://placehold.it/50x50" alt="instagram">
+						<a href="#"><span class="visually-hidden">Инстаграм</span>
+							<img src="img/icon-insta.svg" alt="instagram">
 						</a>
 					</div>
 					<div class="addition">
@@ -354,18 +359,27 @@
 				</div>
 			</div>
 		</footer>
-		<form action="#" method="get">
-			<button class="close">Закрыть</button>
-			<label for="name"> Ваше имя:
-				<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-			</label>
-			<label for="email"> Ваш e-mail:
-				<input type="email" name="email" id="email" placeholder="Для отправки ответа">
-			</label>
-			<p>Текст письма:</p>
-			<textarea name="letter" id="letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-			<input type="submit" value="Отправить">
-		</form>
-		<div class="big-map"></div>
+		<div class="popap-letter">
+			<form action="#" method="get">
+				<button class="close"><span class="visually-hidden">Закрыть</span></button>
+				<label for="name"> Ваше имя:
+					<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+				</label>
+				<label for="email"> Ваш e-mail:
+					<input type="email" name="email" id="email" placeholder="Для отправки ответа">
+				</label>
+				<p>Текст письма:</p>
+				<textarea name="letter" id="letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+				<input type="submit" value="Отправить">
+			</form>
+		</div>
+		<div class="confirmation-order">
+			<h2>Товар добавлен в корзину!</h2>
+			<a class="btn-red" href="#">Оформить заказ</a>
+			<a class="btn-red" href="#">Продолжить покупки</a>
+		</div>
+		<div class="big-map">
+			<span class="visually-hidden">Закрыть</span>
+		</div>
 	</body>
 </html>
