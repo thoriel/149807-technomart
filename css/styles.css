@@ -112,6 +112,9 @@ a {
     color: #fff;
     font-weight: bold;
 }
+.offers-sliders {
+    margin-top: -290px;
+}
 .offers-item a {
     font-size: 14px;
     color: #fff;
@@ -141,11 +144,18 @@ a {
 }
 .offers-item-discount {
     background: #a3dda4;
+    margin-left: 638px;
+    margin-top: 15px;
+}
+.offers-item-delivery {
+    margin-left: 638px;
+    margin-top: 15px;
 }
 /*==================== Popular-goods=====================*/
 
 .popular-goods {
     box-sizing: border-box;
+    margin-top: 50px;
 }
 .popular-title {
     display: flex;
