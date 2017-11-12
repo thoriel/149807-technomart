@@ -297,9 +297,10 @@ footer p {
 }
 .main-catalog-title {
     background: #f4f7f9;
-    padding: 30px;
+    padding: 15px;
     font-size: 30px;
     color: #32425c;
+    text-transform: uppercase;
 }
 .catalog-sorting {
     display: flex;
@@ -319,7 +320,7 @@ footer p {
     justify-content: space-between;
 }
 .product-section li {
-    width: 250px;
+    width: 200px;
     height: 315px;
 }
 .useful-information p {
@@ -333,7 +334,15 @@ footer p {
     font-size: 14px;
     color: #fff;
 }
-.wrapper {}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+.filter {
+    margin-right: 20px;
+}
+
 /*==================== Hidden Layers ====================*/
 
 .offers-slider-two {
