@@ -77,30 +77,37 @@ a {
     box-shadow: 0 5px 0 0 #b52933;
 }
 
-.logo:hover {
+.logo:hover,
+.footer-logo:hover {
     background: #ca2c37;
 }
 
-.logo:active {
+.logo:active
+.footer-logo:active {
     background: #ba2732;
 }
 
-.search:hover,
-.bookmarks:hover,
-.basket:hover {
+.search input:hover,
+.bookmarks a:hover,
+.basket a:hover {
     background: #212a3a;
 }
 
-.bookmarks:active,
-.basket:active {
+.search input:focus {
+    background: #fff;
+    color: #000;
+}
+
+.bookmarks a:active,
+.basket a:active {
     background: #161d29;
 }
 
-.order:hover {
+.order a:hover {
     background: #5fbb2d;
 }
 
-.order:active {
+.order a:active {
     background: #518534;
 }
 
@@ -141,34 +148,32 @@ a {
     color: #fff;
 }
 
-.bookmarks {
+.bookmarks a {
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
+    display: block;
     width: 150px;
     height: 42px;
-    padding-left: 45px;
-    background: url(../img/icon-bookmark.svg) no-repeat 15px 13px;
+    padding-top: 8px;
+    padding-left: 43px;
 }
 
-.basket {
+.basket a {
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
+    display: block;
     width: 150px;
     height: 42px;
-    padding-left: 50px;
-    background: url(../img/icon-cart.svg) no-repeat 15px 13px;
+    padding-top: 8px;
+    padding-left: 47px;
 }
 
-.order {
+.order a {
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 149px;
+    display: block;
+    width: 150px;
     height: 42px;
-    background: #63a63e;
+    padding-top: 8px;
+    padding-left: 20px;
+    background-color: #63a63e;
 }
 
 .acquaintance {
@@ -185,7 +190,7 @@ a {
 
 .shop-introduce {
     box-sizing: border-box;
-    width: 247px;
+    width: 200px;
     height: 69px;
     margin-top: 47px;
     margin-left: 50px;
@@ -202,6 +207,7 @@ a {
     width: 340px;
     height: 133px;
     padding-left: 23px;
+    margin-left: 45px;
 }
 
 .contact-us a {
@@ -260,18 +266,21 @@ a {
 }
 
 .main-nav ul {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     width: 940px;
     list-style: none;
-    padding-left: 0;
+    padding-left: 20px;
+    padding-right: 25px;
     margin: 0;
+    border-bottom: 3px solid #293449;
 }
 
 .main-nav a {
     box-sizing: border-box;
-    display: flex;
-    padding: 18px;
+    display: block;
+    padding: 17px 30px;
 }
 
 /*==================== Offers ===========================*/
@@ -287,7 +296,7 @@ a {
 
 .offers-item {
     width: 300px;
-    height: 123px;
+    height: 125px;
     font-size: 20px;
     color: #fff;
     font-weight: bold;
@@ -298,36 +307,59 @@ a {
     box-sizing: border-box;
 }
 
-.offers-sliders {
-    margin-top: -10px;
-}
-
 .last-items {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 25px;
+    height: 265px;
 }
 
 .offers-item h3 {
-    padding-top: 5px;
-    padding-left: 25px;
+    padding-top: 3px;
+    padding-left: 20px;
 }
 
 .offers-item a {
+    box-sizing: border-box;
+    width: 135px;
+    height: 40px;
     display: flex;
     font-size: 14px;
+    line-height: 18px;
     color: #fff;
     font-weight: normal;
     text-transform: uppercase;
     padding-left: 50px;
+    border-radius: 3px;
+    background: rgba(0,0,0,.1);
+    margin-left: 23px;
+    margin-top: -10px;
+    padding: 12px 23px;
+    padding-right: 0;
+}
+
+.offers-item a:hover {
+    background-color: rgba(0,0,0,.2);
+}
+
+.offers-item a:active {
+    background-color: rgba(0,0,0,.3);
+}
+
+.offers-sliders {
+    display: flex;
+    margin-top: 20px;
+    height: 265px;
 }
 
 .offers-slider-item {
+    box-sizing: border-box;
     width: 620px;
-    height: 266px;
+    height: 265px;
     font-size: 18px;
     color: #fff;
+    padding-left: 20px;
 }
 
 .offers-slider-item h2 {
@@ -339,7 +371,22 @@ a {
     background: url(../img/slider_1.jpg) no-repeat;
 }
 
+.offers-slider-two {
+    background: url(../img/slider_2.jpg) no-repeat;
+}
+
+.offers-slider-item .btn-red {
+    width: 195px;
+    margin-top: 124px;
+    margin-left: 3px;
+    border-radius: 3px;
+    padding: 6px;
+    padding-left: 52px;
+    text-transform: uppercase;
+}
+
 .offers-slider-one p {
+    margin-top: -25px;
     font-family: 'PTSans', 'Arial', sans-serif;
 }
 
@@ -347,21 +394,21 @@ a {
     background-color: #f6b22d;
     background-image: url(../img/icon-1.svg);
     background-repeat: no-repeat;
-    background-position: 215px 35px;
+    background-position: 210px 33px;
 }
 
 .offers-item-tools {
     background: #4aafde;
     background-image: url(../img/icon-2.svg);
     background-repeat: no-repeat;
-    background-position: 200px 35px;
+    background-position: 195px 35px;
 }
 
 .offers-item-equipment {
     background: #cc79d1;
     background-image: url(../img/icon-3.svg);
     background-repeat: no-repeat;
-    background-position: 190px 35px;
+    background-position: 190px 33px;
 }
 
 .offers-item-discount {
@@ -369,15 +416,15 @@ a {
     background: #85d179;
     background-image: url(../img/icon-4.svg);
     background-repeat: no-repeat;
-    background-position: 195px 30px;
+    background-position: 195px 27px;
 }
 
 .offers-item-delivery {
-    margin-top: 20px;
+    margin-top: 12px;
     background-color: #f6b22d;
     background-image: url(../img/icon-5.svg);
     background-repeat: no-repeat;
-    background-position: 190px 35px;
+    background-position: 190px 32px;
 }
 
 
@@ -392,9 +439,8 @@ a {
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
-    align-items: center;
     min-height: 89px;
-    padding: 10px 30px;
+    padding: 3px 25px;
     background: #f9f5f0;
     color: #32425c;
     text-transform: uppercase;
@@ -408,44 +454,140 @@ a {
 .popular-title .btn-red {
     box-sizing: border-box;
     width: 255px;
-    height: 35px;
-    border-radius: 5px;
-    padding: 5px;
+    height: 38px;
+    margin-top: 15px;
+    border-radius: 3px;
+    padding: 7px;
     text-align: center;
 }
 
 .popular-goods-items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: 20px 0;
     list-style: none;
     padding-left: 0;
+    font-size: 0;
 }
 
 .popular-goods-items li {
+    box-sizing: border-box;
+    position: relative;
     width: 220px;
-    height: 315px;
+    height: 320px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+.popular-goods-items .popup-goods {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218px;
+    height: 88px;
+    padding: 40px 0;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10;
+}
+
+.popup-goods .buy,
+.popup-goods .add-bookmark {
+    display: block;
+    width: 129px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    padding: 7px 0;
+    border: 3px solid #63a63e;
+    border-bottom-color: #367315;
+    background-color: #63a63e;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    line-height: 18px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.popup-goods .add-bookmark {
+    color: #32425c;
+    background: #fff;
+    border-bottom-color: #63a63e;
+}
+
+.popup-goods {
+    display: none;
+}
+
+.popular-goods-items li:hover .popup-goods {
+    display: block;
+}
+
+.popular-goods-items li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.popular-goods-items .image {
+    
+}
+
+.popular-goods-items .image img {
+   
 }
 
 .popular-goods-items h3 {
     font-family: 'PTSans', 'Arial', sans-serif;
+    min-height: 40px;
+    padding: 0 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
     text-align: center;
 }
 
+.old-value {
+    display: block;
+    min-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: 'PTSans', 'Arial', sans-serif;
+    font-size: 17px;
+    color: #999;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
 .current-value {
+    display: block;
+    position: relative;
+    width: 80px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    background: #ee3643;
+    border-radius: 3px;
     font-family: 'PTSans', 'Arial', sans-serif;
     font-size: 17px;
     color: #fff;
-    background-color: red;
 }
 
-.old-value {
-    font-family: 'PTSans', 'Arial', sans-serif;
-    font-size: 17px;
-    color: #a9a9a9;
-    font-weight: bold;
+.current-value::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 20px solid white;
+    border-left-color: #ee3643;
 }
 
 /*==================== Popular Producers ================*/
@@ -491,7 +633,7 @@ a {
     text-transform: uppercase;
 }
 
-.services-slider-menu ul {
+.services-slider-menu {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -501,6 +643,11 @@ a {
 .services-slider-menu li {
     padding: 0;
     margin: 0;
+}
+
+.services-slider-menu li:first-child a {
+    background-color: #fff;
+    color: rgb(50, 66, 92);
 }
 
 .services-slider-menu a {
@@ -574,9 +721,11 @@ a {
 .company-description h2 {
     font-size: 30px;
     text-transform: uppercase;
+    margin-bottom: 18px; 
 }
 
 .company-description p {
+    font-family: 'PTSans', 'Arial', sans-serif;
     font-size: 13px;
 }
 
@@ -586,17 +735,41 @@ a {
 }
 
 .company-contacts p {
+    font-family: 'PTSans', 'Arial', sans-serif;
     font-size: 13px;
     margin-top: -18px;
 }
 
+.company-contacts .btn-red {
+    margin-bottom: -25px;
+    width: 300px;
+    height: 40px;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-left: 65px;
+    text-transform: uppercase;
+}
+
 .company-description ul {
-    list-style: none; 
+    list-style: none;
+    margin-top: -8px; 
 }
 
 .company-description li {
+    display: block;
     font-size: 18px;
     margin-top: 10px;
+}
+
+.company-description .btn-red {
+    width: 220px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    margin-top: 30px;
+    border-radius: 3px;
+    text-transform: uppercase;
 }
 
 /*==================== Footer-Top =======================*/
@@ -628,6 +801,7 @@ footer p {
     align-items: center;
     width: 220px;
     height: 70px;
+    border-bottom: 5px solid #b52933;
 }
 
 .footer-logo a {
@@ -635,16 +809,27 @@ footer p {
 }
 
 .footer-contacts {
-    width: 500px;
+    width: 326px;
     min-height: 170px;
     font-size: 17px;
+}
+
+.footer-contacts p {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    width: 322px;
+}
+
+.footer-contacts a {
+    display: block;
 }
 
 .footer-nav {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 18px;
+    padding-left: 60px;
     width: 615px;
     height: 105px;
 }
@@ -655,16 +840,22 @@ footer p {
 }
 
 .footer-nav a {
+    display: block;
     padding: 5px;
+    font-size: 18px;
 }
 
 .footer-main-nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .footer-main-nav li {
-    margin-right: 65px;
+    margin-right: px;
+}
+
+.footer-main-nav li:last-child {
+    margin-right: 0;
 }
 
 .footer-offers-nav ul {
@@ -682,6 +873,7 @@ footer p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 38px;
 }
 
 .social a {
@@ -726,6 +918,8 @@ footer p {
 }
 
 /*==================== Catalog ==========================*/
+
+
 
 .breadcrumbs {
     display: flex;
@@ -790,10 +984,19 @@ footer p {
 
 .btn-red {
     display: block;
+    box-sizing: border-box;
     width: 200px;
     background: #ef3c49;
     font-size: 14px;
     color: #fff;
+}
+
+.btn-red:hover {
+    background-color: #ca2c37;
+}
+
+.btn-red:active {
+    background-color: #ba2732;
 }
 
 .wrapper {
@@ -812,6 +1015,10 @@ footer p {
 }
 
 /*==================== Hidden Layers ====================*/
+
+/*.offers-slider-one {
+    display: none;
+}*/
 
 .offers-slider-two {
     display: none;
