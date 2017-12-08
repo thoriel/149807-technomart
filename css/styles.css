@@ -1475,9 +1475,160 @@ footer p {
     font-family: 'PTSans', 'Arial', sans-serif;
 }
 
+.form-section-price {
+    margin-bottom: 28px;
+}
+
+.range-filter {
+    width: 220px;
+    margin-top: 15px;
+}
+
+.range-controls {
+    position: relative;
+    box-sizing: border-box;
+    height: 80px;
+    background: #f7f3ec;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding-top: 39px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid #fff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 18px;
+}
+
+.range-controls .toggle-max {
+    left: 160px;
+}
+
+.price-controls {
+    font-size: 0;
+}
+
+.price-controls label {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.price-controls input {
+    box-sizing: border-box;
+    width: 95px;
+    padding: 8px 10px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    background: #f7f3ec;
+}
+
+.max-price {
+    text-align: right;
+}
+
+.min-price + span {
+    font-size: 17px;
+    margin: 0 11px;
+}
+
 .form-section ul {
     list-style: none;
     padding: 0;
+}
+
+.line {
+    border: 1px solid #e5e5e5;
+    border-bottom-width: 0;
+}
+
+.form-section-produce {
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.form-section-produce .produce-title {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-family: 'PTSans', 'Arial', sans-serif;
+}
+
+.form-section-produce ul {
+    margin: 0;
+    padding: 0;
+}
+
+.filter-option {
+    margin-bottom: 10px;
+    padding-left: 33px;
+}
+
+.filter-option label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.filter-option input[type=checkbox]+label {
+    font-size: 17px;
+    line-height: 30px;
+    font-family: "PT Sans","Arial",sans-serif;
+    text-transform: uppercase;
+}
+
+.filter-input-checkbox + label::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -32px;
+    width: 26px;
+    height: 26px;
+    background: url(../img/checkbox-off.svg);
+}
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background: url(../img/checkbox-on.svg);
 }
 
 /*====================  ==========================*/
