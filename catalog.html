@@ -155,20 +155,21 @@
                   </li>
                 </ul>
               </div>
+              <hr class="line">
               <div class="form-section form-section-supply">
-                <b>Питание:</b>
+                <b class="supply-title">Питание:</b>
                 <ul>
-                  <li>
-                    <input type="radio" name="supply" value="accumulator" id="accumulator">
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" value="accumulator" id="accumulator" checked>
                     <label for="accumulator">Аккумуляторные</label>
                   </li>
-                  <li>
-                    <input type="radio" name="supply" value="network" id="network">
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" value="network" id="network">
                     <label for="network">Сетевые</label>
                   </li>
                 </ul>
               </div>
-              <input type="submit" value="Показать">
+              <button type="submit" class="filter-button">Показать</button>
             </form>
           </section>
           <section class="catalog-section">
