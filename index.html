@@ -278,6 +278,24 @@
 					<a class="btn-red" href="#">Заблудились? Напишите нам!</a>
 				</section>
 			</section>
+			<div class="popap-letter popap-letter-show">
+				<form action="#" method="get">
+					<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+					<div class="form-answer">
+						<label for="name"> <span>Ваше имя:</span> <br>
+							<input type="text" name="login" id="name" placeholder="Представьтесь, пожалуйста">
+						</label>
+						<label for="email"> <span>Ваш e-mail:</span> <br>
+							<input type="email" name="email" id="email" placeholder="Для отправки ответа">
+						</label>
+						<span>Текст письма:</span>
+						<textarea name="letter" cols="61" rows="6" id="letter" placeholder="В свободной форме"></textarea>
+					</div>
+					<div class="form-button">
+						<input class="btn-red" type="submit" value="Отправить">
+					</div>
+				</form>
+			</div>
 		</main>
 		<footer>
 			<div class="footer-top">
@@ -362,20 +380,6 @@
 					</div>
 				</div>
 			</footer>
-<div class="popap-letter">
-<form action="#" method="get">
-	<button class="close"><span class="visually-hidden">Закрыть</span></button>
-	<label for="name"> Ваше имя:
-		<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-	</label>
-	<label for="email"> Ваш e-mail:
-		<input type="email" name="email" id="email" placeholder="Для отправки ответа">
-	</label>
-	<p>Текст письма:</p>
-	<textarea name="letter" id="letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-	<input type="submit" value="Отправить">
-</form>
-</div>
 <div class="confirmation-order">
 <h2>Товар добавлен в корзину!</h2>
 <a class="btn-red" href="#">Оформить заказ</a>
