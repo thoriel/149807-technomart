@@ -658,7 +658,7 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
-    margin-top: 17px;
+    margin-top: 19px;
     list-style: none;
     padding-left: 0;
     font-size: 0;
@@ -668,7 +668,7 @@ img {
     box-sizing: border-box;
     position: relative;
     width: 220px;
-    height: 320px;
+    height: 318px;
     margin-bottom: 20px;
     border: 1px solid #e5e5e5;
     line-height: 20px;
@@ -782,7 +782,7 @@ li:hover .popup-goods {
 .popular-goods-items li:nth-child(4)::before {
     content: '';
     position: absolute;
-    top: 1px;
+    top: -1px;
     right: 0px;
     z-index: 10;
     width: 60px;
@@ -816,7 +816,7 @@ li:hover .popup-goods {
     min-height: 40px;
     padding: 0 25px;
     margin: 0;
-    margin-top: 13px;
+    margin-top: 11px;
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
@@ -946,11 +946,13 @@ li:hover .popup-goods {
     margin-top: 50px;
     font-size: 30px;
     text-transform: uppercase;
+    letter-spacing: -0.7px;
 }
 
 .services-title p {
     margin: 0;
     margin-top: 30px;
+    letter-spacing: -0.1px;
 }
 
 .services-slider-menu {
@@ -959,6 +961,7 @@ li:hover .popup-goods {
     flex-direction: column;
     list-style: none;
     padding-left: 0; 
+    margin-top: 24px;
 }
 
 .services-slider-menu::after {
@@ -977,6 +980,7 @@ li:hover .popup-goods {
 .services-slider-menu li {
     padding: 0;
     margin: 0;
+    margin-bottom: -5px;
 }
 
 .services-slider-menu li:first-child a {
@@ -1015,6 +1019,14 @@ li:hover .popup-goods {
     font-size: 36px;
     text-transform: uppercase;
     color: rgb(50, 66, 92);
+    margin: 0;
+    margin-top: 28px;
+}
+
+.sliders-section p {
+    margin: 0;
+    margin-top: 30px;
+    letter-spacing: -0.7px;
 }
 
 .services-slider-deliver {
@@ -1073,6 +1085,7 @@ li:hover .popup-goods {
 .company-description h2 {
     margin: 0;
     margin-top: 35px;
+    margin-bottom: 3px;
     font-weight: normal;
     font-size: 30px;
     text-transform: uppercase;
@@ -1082,8 +1095,10 @@ li:hover .popup-goods {
 .company-description p {
     margin: 0;
     margin-top: 35px;
+    margin-bottom: -10px;
     font-family: 'PTSans', 'Arial', sans-serif;
     font-size: 13px;
+    letter-spacing: 0.1px;
 }
 
 .company-contacts h2 {
@@ -1095,15 +1110,16 @@ li:hover .popup-goods {
 .company-contacts p {
     font-family: 'PTSans', 'Arial', sans-serif;
     font-size: 13px;
-    margin-top: -18px;
+    margin-top: -15px;
 }
 
 .company-contacts .btn-red {
-    margin-bottom: -25px;
-    width: 300px;
-    height: 40px;
+    margin-bottom: -23px;
+    margin-top: 15px;
+    width: 299px;
+    height: 38px;
     border-radius: 3px;
-    padding-top: 10px;
+    padding-top: 8px;
     padding-left: 65px;
     text-transform: uppercase;
 }
@@ -1112,16 +1128,17 @@ li:hover .popup-goods {
     padding-left: 0;
     list-style: none;
     margin: 0;
-    margin-top: 0px;
+    margin-top: 27px;
     margin-left: 35px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .company-description li {
     position: relative;
     display: block;
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 17px;
 }
 
 .company-description li::before {
@@ -1136,12 +1153,12 @@ li:hover .popup-goods {
 }
 
 .company-description .btn-red {
-    width: 220px;
-    height: 40px;
+    width: 219px;
+    height: 38px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 40px;
-    margin-top: 30px;
+    margin-top: 16px;
     border-radius: 3px;
     text-transform: uppercase;
 }
@@ -1194,6 +1211,7 @@ footer p {
     margin-top: 25px;
     margin-bottom: 0px;
     width: 322px;
+    letter-spacing: 0.4px;
 }
 
 .footer-contacts a {
@@ -1690,6 +1708,7 @@ footer p {
     line-height: 30px;
     font-family: "PTSans","Arial",sans-serif;
     text-transform: uppercase;
+    letter-spacing: -0.9px;
 }
 
 .filter-input-checkbox + label::before {
@@ -1702,7 +1721,7 @@ footer p {
     background: url(../img/checkbox-off.svg);
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
     content: "";
     position: absolute;
     top: 3px;
@@ -1866,7 +1885,7 @@ footer p {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     list-style: none;
     padding-left: 0;
 }
@@ -1875,7 +1894,7 @@ footer p {
     box-sizing: border-box;
     position: relative;
     width: 220px;
-    height: 320px;
+    height: 318px;
     margin-bottom: 20px;
     border: 1px solid #e5e5e5;
     line-height: 20px;
@@ -1891,16 +1910,25 @@ footer p {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 67px;
     list-style: none;
 }
 
 .pagination-list li {
-    margin-right: 5px;
+    margin-right: 0px;
 }
 
 .pagination-list li:last-child {
     margin-right: 0;
+}
+
+.pagination-list .current-page {
+    background: #ee3643;
+    color: #fff;
+}
+
+.pagination-list .next-page {
+    width: 110px;
 }
 
 .pagination-list a {
@@ -1929,10 +1957,12 @@ footer p {
 
 .useful-information h2 {
     margin: 0;
+    margin-top: -27px;
     margin-bottom: 30px;
     text-transform: uppercase;
     font-size: 30px;
     font-family: "Cuprum","Arial",sans-serif;
+    letter-spacing: -0.5px;
 }
 
 .useful-information p {
@@ -1940,6 +1970,7 @@ footer p {
     font-size: 13px;
     font-family: "PT Sans","Arial",sans-serif;
     line-height: 24px;
+    letter-spacing: 0.07px;
 }
 
 /*==================== Catalog Footer ========================*/
@@ -1980,6 +2011,8 @@ footer p {
     z-index: 200;
     top: 5%;
     left: 50%;
+    margin-left: -470px;
+    top: 30%;
     display: block;
 }
 
@@ -2093,8 +2126,9 @@ footer p {
 
 .big-map {
     position: fixed;
-    top: 50%;
     left: 50%;
+    margin-left: -470px;
+    top: 30%;
     width: 766px;
     height: 561px;
 }
@@ -2103,8 +2137,9 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     position: fixed;
-    top: 5%;
     left: 50%;
+    margin-left: -470px;
+    top: 30%;
     z-index: 200;
     border-top: 7px solid #ee3643;
     width: 620px;
@@ -2200,9 +2235,9 @@ footer p {
     display: none;
 }
 
-.popap-letter {
+/*.popap-letter {
     display: none;
-}
+}*/
 
 .confirmation-order {
     display: none;
