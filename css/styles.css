@@ -80,6 +80,7 @@ img {
     justify-content: center;
     height: 42px;
     width: 220px;
+    line-height: 23px;
     box-shadow: 0 5px 0 0 #b52933;
 }
 
@@ -95,7 +96,7 @@ img {
 .search-form .search-input {
     width: 100%;
     height: 100%;
-    padding-left: 45px;
+    padding-left: 46px;
     background-color: #293449;
     box-sizing: border-box;
     outline: none;
@@ -320,9 +321,10 @@ img {
     box-sizing: border-box;
     width: 200px;
     height: 69px;
-    margin-top: 47px;
-    margin-left: 50px;
+    margin-top: 48px;
+    margin-left: 51px;
     font-size: 16px;
+    line-height: 23px;
     color: #ee3643;
     font-style: italic;
 }
@@ -341,7 +343,7 @@ img {
 .contact-us a {
     box-sizing: border-box;
     display: flex;
-    padding: 5px 5px 5px 70px;
+    padding: 7px 5px 5px 70px;
     width: 267px;
     height: 44px;
     border: 3px solid #fff;
@@ -352,7 +354,7 @@ img {
 
 .contact-us p {
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 9px;
     font-size: 14px;
     color: #32425c;
 }
@@ -362,7 +364,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    max-height: 90px;
+    max-height: 91px;
     width: 300px;
 }
 
@@ -1940,7 +1942,7 @@ footer p {
     margin-bottom: 10px;
     padding: 8px 2px 10px 14px;
     font-size: 13px;
-    font-family: "PT Sans","Arial",sans-serif;
+    font-family: "PTSans","Arial",sans-serif;
     text-align: left;
     line-height: 18px;
     color: #999;
@@ -1992,6 +1994,24 @@ footer p {
     padding: 23px 80px 0;
 }
 
+.form-answer span {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 9px;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Cuprum","Arial",sans-serif;
+}
+
+.popap-letter textarea {
+    padding-top: 5px;
+    padding-left: 12px;
+    font-size: 13px;
+    font-family: "PTSans","Arial",sans-serif;
+    color: #a9a9a9;
+    border: 3px solid #d7dcde;
+}
+
 .form-button {
     background: #f1f1f1;
     padding: 37px 0;
@@ -2009,6 +2029,93 @@ footer p {
     background: #ee3643;
     outline: none;
     border: none;
+}
+
+.big-map {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 766px;
+    height: 561px;
+}
+
+.confirmation-order {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    z-index: 200;
+    border-top: 7px solid #ee3643;
+    width: 620px;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: "PTSans","Arial",sans-serif;
+    background: #fff;
+}
+
+.confirmation-order .icon-order {
+    position: relative;
+    display: inline-block;
+    margin: 20px 40px 50px 50px;
+    width: 66px;
+    height: 66px;
+    line-height: 42px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.confirmation-order .icon-order::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    width: 70px;
+    height: 70px;
+    background: url(../img/form-1.svg) no-repeat;
+}
+
+.icon-order + h2 {
+    margin: 0;
+    margin-top: 55px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: "Cuprum","Arial",sans-serif;
+}
+
+.confirmation-order-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+    background: #f1f1f1;
+    width: 100%;
+}
+
+.confirmation-order-buttons .btn {
+    width: 260px;
+    padding: 11px 49px;
+    margin-right: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    line-height: 18px;
+    font-family: "Cuprum","Arial",sans-serif;
+}
+
+.confirmation-order-buttons .btn-red {
+    display: inline-block;
+    text-align: center;
+}
+
+.confirmation-order-buttons .btn:last-child {
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    margin-right: 0;
+    background: #fff;
+    color: #000;
 }
 
 /*==================== Hidden Layers ====================*/
@@ -2033,9 +2140,9 @@ footer p {
     display: none;
 }
 
-/*.popap-letter {
+.popap-letter {
     display: none;
-}*/
+}
 
 .confirmation-order {
     display: none;
