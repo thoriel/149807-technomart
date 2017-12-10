@@ -460,7 +460,7 @@ img {
 .offers-item {
     position: relative;
     width: 300px;
-    height: 125px;
+    height: 124px;
     font-size: 20px;
     color: #fff;
     font-weight: bold;
@@ -480,8 +480,8 @@ img {
 }
 
 .offers-item h3 {
-    padding-top: 3px;
-    padding-left: 20px;
+    padding-top: 2px;
+    padding-left: 23px;
     margin: 0;
     margin-top: 23px;
     margin-bottom: 15px;
@@ -490,7 +490,7 @@ img {
 .offers-item a {
     box-sizing: border-box;
     width: 135px;
-    height: 40px;
+    height: 39px;
     display: inline-block;
     font-size: 14px;
     line-height: 40px;
@@ -521,17 +521,18 @@ img {
 .offers-slider-item {
     box-sizing: border-box;
     width: 620px;
-    height: 265px;
+    height: 266px;
     font-size: 18px;
     color: #fff;
-    padding-left: 25px;
+    padding-left: 24px;
 }
 
 .offers-slider-item h2 {
     margin: 0;
-    margin-top: 30px;
+    margin-top: 29px;
     font-size: 36px;
     text-transform: uppercase;
+    letter-spacing: -0.2px;
 }
 
 .offers-slider-one {
@@ -551,12 +552,14 @@ img {
     vertical-align: baseline;
     border-radius: 3px;
     text-transform: uppercase;
+    word-spacing: -1px;
+    letter-spacing: -0.1px;
 }
 
 .offers-slider-item p {
     margin: 0;
-    margin-top: 5px;
-    margin-bottom: 123px;
+    margin-top: 7px;
+    margin-bottom: 122px;
     font-family: 'PTSans', 'Arial', sans-serif;
 }
 
@@ -568,14 +571,14 @@ img {
     background-color: #f6b22d;
     background-image: url(../img/icon-1.svg);
     background-repeat: no-repeat;
-    background-position: 210px 33px;
+    background-position: 212px 33px;
 }
 
 .offers-item-tools {
     background: #4aafde;
     background-image: url(../img/icon-2.svg);
     background-repeat: no-repeat;
-    background-position: 195px 35px;
+    background-position: 196px 35px;
 }
 
 .offers-item-equipment {
@@ -601,12 +604,11 @@ img {
     background-position: 190px 32px;
 }
 
-.offers .new::before,
-.popular-goods-items li:nth-child(4)::before {
+.offers .new::before {
     content: '';
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1px;
+    right: 1px;
     z-index: 10;
     width: 60px;
     height: 60px;
@@ -626,7 +628,8 @@ img {
     justify-content: space-between;
     min-height: 89px;
     margin: 0;
-    padding: 3px 25px;
+    padding: 4px 27px;
+    padding-right: 25px;
     background: #f9f5f0;
     color: #32425c;
     text-transform: uppercase;
@@ -642,7 +645,7 @@ img {
     box-sizing: border-box;
     display: inline-block;
     line-height: 38px;
-    width: 255px;
+    width: 253px;
     height: 38px;
     margin-top: 20px;
     border-radius: 3px;
@@ -776,13 +779,44 @@ li:hover .popup-goods {
     margin-right: 0;
 }
 
+.popular-goods-items li:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    background: url(../img/new_flag.png) no-repeat 0 0;
+}
+
+.drill-image {
+    position: relative;
+    width: 218px;
+    height: 168px;
+}
+
+.drill-image > img {
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    z-index: 9;
+}
+
+.drill-image-new > img {
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    z-index: 9;
+}
+
 .popular-goods-items h3,
 .product-section h3 {
     font-family: 'PTSans', 'Arial', sans-serif;
     min-height: 40px;
     padding: 0 25px;
     margin: 0;
-    margin-top: 15px;
+    margin-top: 13px;
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
@@ -805,9 +839,10 @@ li:hover .popup-goods {
     display: block;
     position: relative;
     width: 80px;
-    margin: 10px auto;
+    height: 20px;
+    margin: 9px auto;
     margin-bottom: 20px;
-    padding: 10px 30px;
+    padding: 9px 28px;
     background: #ee3643;
     border-radius: 3px;
     font-family: 'PTSans', 'Arial', sans-serif;
@@ -817,14 +852,14 @@ li:hover .popup-goods {
 
 .popular-goods-items li:nth-child(4) .current-value,
 .product-section li:nth-child(3n) .current-value {
-    margin-top: 40px;
+    margin-top: 39px;
 }
 
 .current-value::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: -20px;
+    top: -1px;
+    right: -25px;
     width: 0;
     height: 0;
     border: 20px solid white;
@@ -835,6 +870,31 @@ li:hover .popup-goods {
 
 .popular-producers {
     box-sizing: border-box;
+}
+
+.popular-producers .popular-title {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    min-height: 89px;
+    margin: 0;
+    padding: 6px 23px;
+    padding-right: 25px;
+    background: #f9f5f0;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.popular-producers .btn-red {
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 38px;
+    width: 253px;
+    height: 38px;
+    margin-top: 20px;
+    border-radius: 3px;
+    text-align: center;
+    vertical-align: baseline;
 }
 
 .popular-producers-items {
