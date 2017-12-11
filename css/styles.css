@@ -1,5 +1,41 @@
 @font-face {
     font-family: 'Cuprum';
+    src: url('../fonts/web/cuprum.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/web/cuprumbold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/web/cuprumitalic.woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url('../fonts/web/ptsans.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url('../fonts/web/ptsansbold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Cuprum';
     src: url('../fonts/web/cuprum.woff2');
     font-weight: normal;
     font-style: normal;
@@ -568,6 +604,7 @@ img {
 }
 
 .offers-item-materials {
+    margin-right: auto;
     background-color: #f6b22d;
     background-image: url(../img/icon-1.svg);
     background-repeat: no-repeat;
@@ -575,6 +612,7 @@ img {
 }
 
 .offers-item-tools {
+    margin-right: auto;
     background: #4aafde;
     background-image: url(../img/icon-2.svg);
     background-repeat: no-repeat;
@@ -1062,6 +1100,7 @@ li:hover .popup-goods {
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
+    margin-bottom: 110px;
 }
 
 .company-description {
@@ -1155,9 +1194,9 @@ li:hover .popup-goods {
 .company-description .btn-red {
     width: 219px;
     height: 38px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
+    line-height: 38px;
+    text-align: center;
+    vertical-align: middle;
     margin-top: 16px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -1166,7 +1205,6 @@ li:hover .popup-goods {
 /*==================== Footer-Top =======================*/
 
 footer {
-    margin-top: 110px;
 }
 
 footer a,
@@ -1879,6 +1917,10 @@ footer p {
 }
 
 /*==================== Product Section ========================*/
+
+.catalog-section {
+    width: 700px;
+}
 
 .product-section {
     display: flex;
