@@ -959,12 +959,15 @@ li:hover .popup-goods {
 .popular-producers-items a {
     box-sizing: border-box;
     display: inline-block;
-    padding-top: 15px;
     width: 220px;
     height: 145px;
     line-height: 145px;
     vertical-align: middle;
     text-align: center;
+}
+
+.popular-producers-items img {
+    vertical-align: middle;
 }
 
 .popular-producers-items li:hover {
@@ -1448,6 +1451,16 @@ footer p {
     width: 20px;
     height: 20px;
     opacity: 0.5;
+}
+
+.user-id .logout-button {
+    position: absolute;
+    top: 12px;
+    left: 266px;
+    width: 22px;
+    height: 20px;
+    opacity: 0;
+    background: red;
 }
 
 .user-id:hover svg {
@@ -2027,7 +2040,7 @@ footer p {
     font-size: 13px;
     font-family: "PT Sans","Arial",sans-serif;
     line-height: 24px;
-    letter-spacing: 0.1px;
+    letter-spacing: -0.4px;
 }
 
 /*==================== Catalog Footer ========================*/
