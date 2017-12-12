@@ -897,11 +897,11 @@ li:hover .popup-goods {
 .current-value::after {
     content: "";
     position: absolute;
-    top: -1px;
+    top: 0px;
     right: -25px;
     width: 0;
     height: 0;
-    border: 20px solid white;
+    border: 19px solid white;
     border-left-color: #ee3643;
 }
 
@@ -1239,7 +1239,6 @@ footer p {
 }
 
 .footer-contacts {
-    width: 326px;
     min-height: 170px;
     font-size: 17px;
 }
@@ -1262,6 +1261,7 @@ footer p {
 }
 
 .footer-contacts p {
+    width: 340px;
     margin-top: 28px;
     padding-left: 3px;
     margin-bottom: 0px;
@@ -1284,7 +1284,7 @@ footer p {
     display: flex;
     flex-direction: column;
     margin-top: 18px;
-    padding-left: 63px;
+    padding-left: 45px;
     width: 615px;
     height: 105px;
 }
