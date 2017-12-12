@@ -1243,15 +1243,15 @@ footer p {
 
 .footer-logo {
     width: 220px;
-    min-height: 70px;
+    min-height: 62px;
 }
 
 .footer-logo a {
     display: inline-block;
     box-sizing: border-box;
     width: 220px;
-    min-height: 70px;
-    line-height: 70px;
+    min-height: 63px;
+    line-height: 63px;
     vertical-align: middle;
     text-align: center;
     border-bottom: 5px solid #b52933;
@@ -1259,7 +1259,7 @@ footer p {
 }
 
 .footer-contacts p {
-    margin-top: 21px;
+    margin-top: 28px;
     padding-left: 3px;
     margin-bottom: 0px;
     letter-spacing: 0.4px;
@@ -1281,7 +1281,7 @@ footer p {
     display: flex;
     flex-direction: column;
     margin-top: 18px;
-    padding-left: 60px;
+    padding-left: 63px;
     width: 615px;
     height: 105px;
 }
@@ -2027,7 +2027,7 @@ footer p {
     font-size: 13px;
     font-family: "PT Sans","Arial",sans-serif;
     line-height: 24px;
-    letter-spacing: 0.07px;
+    letter-spacing: 0.1px;
 }
 
 /*==================== Catalog Footer ========================*/
