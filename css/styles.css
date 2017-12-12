@@ -1435,6 +1435,10 @@ footer p {
     color: #000;
 }
 
+.user-id {
+    position: relative;
+}
+
 .user-id .user-icon {
     position: absolute;
     top: 12px;
@@ -1461,6 +1465,7 @@ footer p {
     height: 20px;
     opacity: 0;
     background: red;
+    cursor: pointer;
 }
 
 .user-id:hover svg {
