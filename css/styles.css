@@ -531,6 +531,7 @@ img {
     font-size: 14px;
     line-height: 40px;
     text-align: center;
+    vertical-align: middle;
     color: #fff;
     font-weight: normal;
     text-transform: uppercase;
@@ -1490,6 +1491,7 @@ footer p {
 
 .user-options a {
     display: inline-block;
+    vertical-align: middle;
     margin-top: 6px;
     margin-left: 15px;
     font-size: 16px;
@@ -1502,6 +1504,7 @@ footer p {
     display: inline-block;
     width: 5px;
     height: 5px;
+    vertical-align: middle;
     margin-bottom: 2px;
     margin-left: 10px;
     background: #32425c;
@@ -1706,6 +1709,7 @@ footer p {
 .price-controls label {
     box-sizing: border-box;
     display: inline-block;
+    vertical-align: middle;
     font-size: 17px;
     text-transform: uppercase;
 }
@@ -2079,15 +2083,16 @@ footer p {
     border-top: 7px solid #ee3643;
     width: 620px;
     background: #fff;
-}
-
-.popap-letter-show {
     position: fixed;
     z-index: 200;
     top: 5%;
     left: 50%;
     margin-left: -470px;
     top: 30%;
+    display: none;
+}
+
+.popap-letter-show {
     display: block;
 }
 
@@ -2124,15 +2129,21 @@ footer p {
 }
 
 .modal-close {
-    padding: 0;
+    position: absolute;
+    top: 1%;
+    left: 96%;
+    width: 25px;
+    height: 20px;
+    background: transparent;
+    font-size: 0;
     border: 0;
 }
 
 .modal-close::before {
     content: '';
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 7px;
+    right: 2px;
     transform: rotate(-45deg);
     width: 20px;
     height: 5px;
@@ -2144,8 +2155,8 @@ footer p {
 .modal-close::after {
     content: '';
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 7px;
+    right: 2px;
     transform: rotate(45deg);
     width: 20px;
     height: 5px;
@@ -2164,6 +2175,7 @@ footer p {
 
 .form-answer span {
     display: inline-block;
+    vertical-align: middle;
     margin: 0;
     margin-bottom: 9px;
     font-size: 18px;
@@ -2282,6 +2294,7 @@ footer p {
 .confirmation-order-buttons .btn:last-child {
     display: inline-block;
     text-align: center;
+    vertical-align: middle;
     width: 160px;
     margin-right: 0;
     background: #fff;
@@ -2307,10 +2320,6 @@ footer p {
 }
 
 .services-slider-credit {
-    display: none;
-}
-
-.popap-letter {
     display: none;
 }
 
