@@ -647,7 +647,7 @@ img {
     content: '';
     position: absolute;
     top: 1px;
-    right: 1px;
+    right: 0px;
     z-index: 10;
     width: 60px;
     height: 60px;
@@ -818,14 +818,14 @@ li:hover .popup-goods {
     margin-right: 0;
 }
 
-.popular-goods-items li:nth-child(4)::before {
+.drill-image-new::before {
     content: '';
     position: absolute;
     top: -1px;
-    right: 0px;
-    z-index: 10;
+    right: -1px;
+    z-index: 11;
     width: 60px;
-    height: 60px;
+    height: 63px;
     background: url(../img/new_flag.png) no-repeat 0 0;
 }
 
@@ -910,6 +910,7 @@ li:hover .popup-goods {
 
 .popular-producers {
     box-sizing: border-box;
+    margin-bottom: 68px;
 }
 
 .popular-producers .popular-title {
@@ -983,10 +984,9 @@ li:hover .popup-goods {
 /*==================== Services =========================*/
 
 .services {
-    min-height: 420px;
+    margin: 0;
     background: #f4f8f9;
-    padding: 20px;
-    margin-top: 65px;
+    min-height: 522px;
 }
 
 .services-title {
@@ -997,7 +997,7 @@ li:hover .popup-goods {
 
 .services-title h2 {
     margin: 0;
-    margin-top: 50px;
+    padding-top: 68px;
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: -0.7px;
@@ -1115,8 +1115,8 @@ li:hover .popup-goods {
 .about-us {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
-    margin-bottom: 86px
+    margin-bottom: 86px;
+    padding-top: 78px;
 }
 
 .company-description {
@@ -1137,24 +1137,32 @@ li:hover .popup-goods {
 
 .company-description h2 {
     margin: 0;
-    margin-top: 35px;
-    margin-bottom: 3px;
+    margin-bottom: 26px;
     font-weight: normal;
     font-size: 30px;
     text-transform: uppercase;
-    line-height: 5px;
+    line-height: 30px;
 }
 
-.company-description p {
-    margin: 0;
-    margin-top: 35px;
-    margin-bottom: -10px;
+.description-items {
+    margin-bottom: 18px;
     font-family: 'PTSans', 'Arial', sans-serif;
     font-size: 13px;
     letter-spacing: 0.1px;
 }
 
+.description-items p:first-child {
+    margin-bottom: 25px;
+}
+
+.company-description p {
+    margin: 0;
+}
+
+
+
 .company-contacts h2 {
+    margin-top: 4px;
     font-weight: normal;
     text-transform: uppercase;
     font-size: 30px;
@@ -1183,9 +1191,7 @@ li:hover .popup-goods {
     padding-left: 0;
     list-style: none;
     margin: 0;
-    margin-top: 27px;
     margin-left: 35px;
-    margin-bottom: 0px;
 }
 
 .company-description li {
@@ -1240,6 +1246,7 @@ footer p {
 }
 
 .footer-contacts {
+    width: 330px;
     min-height: 170px;
     font-size: 17px;
 }
@@ -1285,7 +1292,7 @@ footer p {
     display: flex;
     flex-direction: column;
     margin-top: 18px;
-    padding-left: 45px;
+    padding-left: 55px;
     width: 615px;
     height: 105px;
 }
@@ -1801,7 +1808,7 @@ footer p {
     position: absolute;
     top: 3px;
     left: -32px;
-    width: 23px;
+    width: 27px;
     height: 23px;
     background: url(../img/checkbox-on.svg);
 }
